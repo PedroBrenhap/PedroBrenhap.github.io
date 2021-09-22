@@ -1,0 +1,85 @@
+.quiz{
+    margin-left: -30px;
+    margin-top: 30px;
+    height: 50px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 550px;
+    text-align: center;
+}
+
+.quiz_box{
+    margin-left: 400px;
+    width: 550px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.quiz_box section{
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.quiz_box section .quiz{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.quiz_box section .option_list{
+    padding: 20px 0;
+    display: block;
+}
+
+
+section .option_list .option{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section .option_list .option:hover{
+    color: #004085;
+    background: #cce5ff;
+    border-color: #b8daff;
+}
+
+.option_list .option:last-child{
+    margin-bottom: 0px;
+}
+.option_list .option .icon{
+    height: 26px;
+    width: 26px;
+    
+    
+    text-align: center;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.option_list .option .icon.tick{
+    border-color: #ffffff00;
+    color: #ffffff00;
+    background: #ffffff00;
+}
+
+.option_list .option .icon.cross{
+    border-color: #ffffff00;
+    color: #ffffff00;
+    background: #ffffff00;
+}
+span{
+    font-family:  'friends', Times, serif;
+    font-size: 20px;
+}
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="Ex2.css">
+    <link rel="stylesheet" href="Ex3.css">
+    <style>
+        .but{
+            position: absolute;
+            width: 80px;
+            margin-top: 191px;
+            border-radius: 10px;
+            height: 30px;
+            color: black;
+            cursor: pointer;
+        }
+        .but:hover{
+            border: 3px solid yellow;
+            transition-duration: 500ms;
+            background-image: linear-gradient(to right, white , gray);
+        }
+   </style>
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img id="i" src="imagens/logo.png" alt="logo" style="position: absolute; width: 280px; margin: 22px;"></a>
+    </header>
+    <nav>
+        <button class="d" style="margin-left: 680px; "><a href="Personagens.html" class="col">Personagens</a></button>
+        <button class="d" style="margin-left: 826px;"><a href="Temporadas.html" class="col">Temporadas</a></button>
+        <button class="d" style="margin-left: 970px;"><a href="Galeria de Fotos.html" class="col" >Galeria de Fotos</a></button>
+        <button class="d" style="margin-left: 1165px;"><a href="Fale Conosco.html" class="col">Fale Conosco</a></button>
+    </nav>
+    <main>
+        <img src="imagens/WallPapper.jpg" alt="WP" style="position: absolute; width: 1366px; height: 413px; border-bottom: 1px solid rgb(20, 20, 20); ;">
+        <img src="imagens/1.jpg" alt="" id="iTela" class="gal" style="width: 600px; height: 350px; border: 2px solid black; position: absolute; margin-top: 30px; margin-left: 390px;">
+        <br>
+        <button class="but" onclick="anterior()" onclick="verificarImagem()"  style="margin-left: 200px; "><b><<</b></button>
+        <button class="but" onclick="proximo()" style="margin-left: 1100px;"><b>>></b></button>
+        
+        
+        
+    </main>
+    <footer>
+        
+    </footer>
+    <script>
+        var lista=[];
+        lista.push("imagens/1.jpg") ;
+        lista.push("imagens/2.jpg") ;
+        lista.push("imagens/3.jpg");
+        lista.push("imagens/4.jpg");
+        lista.push("imagens/5.jpg");
+        lista.push("imagens/6.jpg");
+        lista.push("imagens/7.jpg");
+        lista.push("imagens/8.jpg");
+        lista.push("imagens/9.jpg");
+
+
+        
+        var i=0;
+        function anterior(){
+            if(i==0){
+                i = lista.length-1
+            }else{
+                i--;
+            }
+            document.getElementById("iTela").src = lista[i];
+        }
+
+        function proximo(){
+            if(i==8){
+                i = lista.length-9;
+            }else{
+                i++;
+            }
+          document.getElementById("iTela").src= lista[i];
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="Ex2.css">
+    <link rel="stylesheet" href="Ex3.css">
+    <link rel="stylesheet" href="Ex5.css">
+    <style>
+        .iFim{
+            position: absolute;
+            text-align: center;
+            width: 80px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img id="i" src="imagens/logo.png" alt="logo" style="position: absolute; width: 280px; margin: 22px;"></a>
+    </header>
+    <nav>
+        <button class="d" style="margin-left: 680px; "><a href="Personagens.html" class="col">Personagens</a></button>
+        <button class="d" style="margin-left: 826px;"><a href="Temporadas.html" class="col">Temporadas</a></button>
+        <button class="d" style="margin-left: 970px;"><a href="Galeria de Fotos.html" class="col" >Galeria de Fotos</a></button>
+        <button class="d" style="margin-left: 1165px;"><a href="Fale Conosco.html" class="col">Fale Conosco</a></button>
+    </nav>
+    <main>
+        <img src="imagens/WallPapper.jpg" alt="WP" style="position: absolute; width: 1366px; height: 413px; border-bottom: 1px solid rgb(29, 29, 29); ;">
+        <div style="position: absolute; background-image: linear-gradient(to right, black, rgb(100, 100, 100), transparent, transparent, transparent, rgb(100, 100, 100), black); width: 1300px; height: 380px; margin-top: 15px; margin-left: 30px; border: 2px solid rgb(230, 233, 41), purple; border-radius: 10px;">
+        </div>
+            <textarea name="areaDeTexto" id="iAreaDeTexto" cols="36" rows="10" placeholder="Deixe sua sugestao para contribuir com as melhorias do site!" ></textarea>
+            <input type="submit" value="ENVIAR" class="iFim" style="margin-left: 1040px; margin-top: 300px;">
+            <input type="submit" value="EXCLUIR" class="iFim" style="margin-left: 1150px; margin-top: 300px;">
+            <div class="fc" style="margin-left: 6px;">
+                <p><label for="iNome" style="margin-left: 131px;">Nome <input type="text" id="iNome" onblur="verificarNome('iNome')"></label></p>
+        
+
+                <p><label for="iCPF" style="margin-left: 142px;">CPF <input type="text" id="iCPF" placeholder="000.000.000-00" onblur="verificarCPF('iCPF')"></label></p>
+        
+                <p><label for="iRG" style="margin-left: 148px;">RG <input type="text" id="iRG" placeholder="00.000.000-00" onblur="verificarRG('iRG')"></label></p>
+
+                <p><label for="iTelefone" style="margin-left: 114px;">Telefone <input type="tel" id="iTelefone" onblur="verificarTelefone('iTelefone')" placeholder="(99)99999-9999"></label></p>
+        
+
+                <p><label for="iDataDeNascimento" style="margin-left: 40px;">Data de Nascimento  <input type="date" id="iDataDeNascimento"></label></p>
+    
+
+                <p><label for="iCidade" style="margin-left: 125px;">Cidade <select name="cidade" id="iCidade" >
+                    <option value="cidade">Selecione sua Cidade</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="Niter?i">Niter?i</option>
+                    <option value="Duque de Caxias">Duque de Caxias</option>
+                    <option value="S?o Gon?alo">S?o Gon?alo</option>
+                    <option value="Belford Roxo">Belford Roxo</option>
+                    <option value="Belford Roxo">Teresopolis</option>
+                    <option value="Belford Roxo">Campo Grande</option>
+                    <option value="Belford Roxo">Outro</option>
+                </select></label></p>
+                
+                
+                <p><label for="iEndereco" style="margin-left: 110px;">Endereco <input type="text" id="iEndereco"  onblur="verificarEndereco('iEndereco')"></label></p>
+
+
+                <p><label for="iNumero" style="margin-left: 118px;">Numero <input type="number" id="iNumero"  onblur="verificarNumero('iNumero')"></label></p>
+        
+            
+                <p><label for="iComplemento" style="margin-left: 80px;">Complemento <input type="text" id="iComplemento"  onblur="verificarComplemento('iComplemento')"></label></p>
+            
+            </div>
+            <div class="fc" style="margin-left: 512px;">
+                <p id="iNomeErro" class="pgph"></p>
+                <br><br>
+                <p id="iCPFErro" class="pgph" ></p>
+                <br><br>
+                <p id="iRGErro" class="pgph"></p>
+                <br><br>
+                <p id="iTelefoneErro" class="pgph"></p>
+                <br><br>
+                <p id="iDataDeNascimentoErro" class="pgph"></p>
+                <br><br><br><br>
+                <p id="iCidadeErro" class="pgph"></p>
+                <br><br>
+                <p id="iEnderecoErro" class="pgph"></p>
+                <br><br>
+                <p id="iNumeroErro" class="pgph"></p>
+                <br><br>
+                <p id="iComplementoErro" class="pgph"></p>
+            </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="Ex1.js"></script>
+</body>
+</html>

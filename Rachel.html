@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel</title>
+    <link rel="stylesheet" href="Ex2.css">
+    <link rel="stylesheet" href="Ex3.css">
+    <link rel="stylesheet" href="Ex4.css">
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img id="i" src="imagens/logo.png" alt="logo" style="position: absolute; width: 280px; margin: 22px;"></a>
+    </header>
+    <nav>
+        <div class="x" style="position: absolute; margin-left: 530px;  margin-top: 15px; font-size: 30px;">Rachel</div>
+        <button class="d" style="margin-left: 795px; "><a href="Chandler.html" class="col">Chandler</a></button>
+        <button class="d" style="margin-left: 920px;"><a href="Joey.html" class="col">Joey</a></button>
+        <button class="d" style="margin-left: 976px;"><a href="Monica.html" class="col">Monica</a></button>
+        <button class="d" style="margin-left: 1070px;"><a href="Phoebe.html" class="col">Phoebe</a></button>
+        <button class="d" style="margin-left: 1253px;"><a href="Ross.html" class="col">Ross</a></button>
+        <button class="q"><a href="Personagens.html" class="col">Voltar ao menu de personagens</a></button>
+    </nav>
+    <main>
+        <img src="imagens/LogoQuiz.jpg" alt="LQ" style="width: 1366px; height: 420px;">
+        <div id="rolar" style="margin-left: 0px; margin-top: -415px; position: ;">
+            
+            <img class="ga" src="imagens/Rachel01.jpg" alt="01">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                         <span>1. Qual era o nome do noivo que Rachel abandonou no Altar?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" id="oii" onclick="mudarCorErro('oii')">
+                            <span>Larry</span>
+                            <div class="icon cross" id="wq"><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" id="oi" onclick="mudarCorErro('oi')">
+                            <span>Jarry</span>
+                            <div class="icon tick"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" id="oiii" onclick="mudarCorAcerto('oiii')">
+                            <span>Barry</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" id="oiiii" onclick="mudarCorErro('oiiii')">
+                            <span>Harry</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Rachel02.png" alt="2" style="width: 500px; height: 300px; margin-left: 422px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>2. Quantas irmas a Rachel tem?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('aiii')" id="aiii">
+                            <span>1</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('aii')" id="aii">
+                            <span>2</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('aiiii')" id="aiiii">
+                            <span>3</span>
+                            <div class="icon tick" ><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('ai')" id="ai">
+                            <span>4</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Rachel03.jpg" alt="3" style="width: 500px; height: 400px;margin-left: 422px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>3. Quais os nomes delas?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('eii')" id="eii">
+                            <span>Jenny e Jill</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorErro('eiii')" id="eiii">
+                            <span>Amy e Laura</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorAcerto('eiiii')" id="eiiii">
+                            <span>Amy e Jill</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorErro('ei')" id="ei">
+                            <span>Laura e Jenny</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Rachel04.jpg" alt="4" style="width: 400px; height: 500px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>4. Quem Rachel nunca beijou?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option"  onclick="mudarCorErro('uii')" id="uii">
+                            <span>Ross</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('ui')" id="ui">
+                            <span>Chandler</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('uiii')" id="uiii">
+                            <span>Joey</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('uiiii')" id="uiiii">
+                            <span>Nenhuma das alternativas</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="gal" src="imagens/Rachel05.jpg" alt="5" style="width: 400px; height: 400px; margin-left:  480px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>5.  Que objeto Rachel usou de metafora para dizer que queria mudar sua personalidade?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('iii')" id="iii">
+                            <span>Sapato</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('iiiii')" id="iiiii">
+                            <span>Bolsa</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"onclick="mudarCorAcerto('iiii')" id="iiii">
+                            <span>Chapeu</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('ii')" id="ii">
+                            <span>Oculos</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+           
+            
+            
+            
+            
+            
+            </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="Ex2.js"></script>
+</body>
+</html>

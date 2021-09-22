@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ross</title>
+    <link rel="stylesheet" href="Ex2.css">
+    <link rel="stylesheet" href="Ex3.css">
+    <link rel="stylesheet" href="Ex4.css">
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img id="i" src="imagens/logo.png" alt="logo" style="position: absolute; width: 280px; margin: 22px;"></a>
+    </header>
+    <nav>
+        <div class="x" style="position: absolute; margin-left: 530px;  margin-top: 15px; font-size: 30px;">Ross</div>
+        <button class="d" style="margin-left: 795px; "><a href="Chandler.html" class="col">Chandler</a></button>
+        <button class="d" style="margin-left: 920px;"><a href="Joey.html" class="col">Joey</a></button>
+        <button class="d" style="margin-left: 976px;"><a href="Monica.html" class="col">Monica</a></button>
+        <button class="d" style="margin-left: 1070px;"><a href="Phoebe.html" class="col">Phoebe</a></button>
+        <button class="d" style="margin-left: 1155px;"><a href="Rachel.html" class="col">Rachel</a></button>
+        <button class="q"><a href="Personagens.html" class="col">Voltar ao menu de personagens</a></button>
+    </nav>
+    <main>
+        <img src="imagens/LogoQuiz.jpg" alt="LQ" style="width: 1366px; height: 420px;">
+        <div id="rolar" style="margin-left: 0px; margin-top: -415px; position: ;">
+            
+            <img class="ga" src="imagens/Ross01.jpg" alt="01">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                         <span>1. Qual destes animais Ross tem pavor?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" id="oii" onclick="mudarCorErro('oii')">
+                            <span>Cobras</span>
+                            <div class="icon cross" id="wq"><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" id="oi" onclick="mudarCorErro('oi')">
+                            <span>Borboletas</span>
+                            <div class="icon tick"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" id="oiii" onclick="mudarCorAcerto('oiii')">
+                            <span>Aranhas</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" id="oiiii" onclick="mudarCorErro('oiiii')">
+                            <span>Cachorros</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Ross02.jpg" alt="2" style="width: 350px; height: 300px; margin-left: 497px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>2. Qual era o nome de seu macaco de estimacao?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('aiii')" id="aiii">
+                            <span>Daniel</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('aii')" id="aii">
+                            <span>Marcel</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('aiiii')" id="aiiii">
+                            <span>Louis</span>
+                            <div class="icon tick" ><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('ai')" id="ai">
+                            <span>Pete</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Ross03.png" alt="3" style="width: 500px; height: 400px;margin-left: 422px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>3. O que fez com que Ross e Emilly terminassem?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('eii')" id="eii">
+                            <span>Ross ter dito o nome da Rachel no altar</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorErro('eiii')" id="eiii">
+                            <span>Emilly ter traido Ross</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorErro('eiiii')" id="eiiii">
+                            <span>Ross ter traido Emilly</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorAcerto('ei')" id="ei">
+                            <span>Ross não ter conseguido se afastar da Rachel</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Ross04.jpeg" alt="4" style="width: 400px; height: 500px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>4. Que presente ele comprou para si mesmo em seu aniversario de 30 anos?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option"  onclick="mudarCorErro('uii')" id="uii">
+                            <span>Um apartamento</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('ui')" id="ui">
+                            <span>Uma casa na praia</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('uiii')" id="uiii">
+                            <span>Um carro esprtivo</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('uiiii')" id="uiiii">
+                            <span>Uma sessao de bronzeamento artificial</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="gal" src="imagens/Ross05.jpg" alt="5" style="width: 400px; height: 500px; margin-left:  480px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>5. Qual boato Ross inventou sobre a Rachel na epoca da escola?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('iii')" id="iii">
+                            <span>Rachel era gay</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('iiiii')" id="iiiii">
+                            <span>Rachel tinha uma verruga escondida pelo corpo</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"onclick="mudarCorErro('iiii')" id="iiii">
+                            <span>Rachel teve relacoes sexuais com o professor de ed. fisica, na biblioteca da escola</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('ii')" id="ii">
+                            <span>Rachel possuia os dois orgaos sexuais, sendo assim uma pessoa Hermafrodita</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+           
+            
+            
+            
+            
+            
+            </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="Ex2.js"></script>
+</body>
+</html>

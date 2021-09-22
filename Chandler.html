@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandler</title>
+    <link rel="stylesheet" href="Ex2.css">
+    <link rel="stylesheet" href="Ex3.css">
+    <link rel="stylesheet" href="Ex4.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img id="i" src="imagens/logo.png" alt="logo" style="position: absolute; width: 280px; margin: 22px;"></a>
+    </header>
+    <nav>
+        <div class="x" style="position: absolute; margin-left: 530px;  margin-top: 15px; font-size: 30px;">Chandler</div>
+        <button class="d" style="margin-left: 920px; "><a href="Joey.html" class="col">Joey</a></button>
+        <button class="d" style="margin-left: 976px;"><a href="Monica.html" class="col">Monica</a></button>
+        <button class="d" style="margin-left: 1070px;"><a href="Phoebe.html" class="col">Phoebe</a></button>
+        <button class="d" style="margin-left: 1155px;"><a href="Rachel.html" class="col">Rachel</a></button>
+        <button class="d" style="margin-left: 1253px;"><a href="Ross.html" class="col">Ross</a></button>
+        <button class="q"><a href="Personagens.html" class="col">Voltar ao menu de personagens</a></button>
+    </nav>
+    <main>
+        <img src="imagens/LogoQuiz.jpg" alt="LQ" style="width: 1366px; height: 420px;">
+        <div id="rolar" style="margin-left: 0px; margin-top: -415px; position: ;">
+            
+            <img class="ga" src="imagens/Chan1.jpg" alt="01">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                         <span>1. Qual o nome da profissao de Chandler?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" id="oi" onclick="mudarCorAcerto('oi')">
+                            <span>Processador de Dados</span>
+                            <div class="icon tick" id="wq"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" id="oii" onclick="mudarCorErro('oii')">
+                            <span>Economista</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" id="oiii" onclick="mudarCorErro('oiii')">
+                            <span>Transmissor</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" id="oiiii" onclick="mudarCorErro('oiiii')">
+                            <span>Ator</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Chan2.jpg" alt="2">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>2. Quem Chandler nunca beijou?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('aiii')" id="aiii">
+                            <span>Rachel</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('aii')" id="aii">
+                            <span>Phoebe</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('ai')" id="ai">
+                            <span>Beijou todas</span>
+                            <div class="icon tick" ><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('aiiii')" id="aiiii">
+                            <span>Rachel e Phoebe</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Chan3.jpg" alt="3">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>3. Na abertura da serie, Chandler é apresentado depois de quem?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('eii')" id="eii">
+                            <span>Depois da Rachel</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorErro('eiii')" id="eiii">
+                            <span>Depois da Monica</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorAcerto('ei')" id="ei">
+                            <span>Depois do Joey</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorErro('eiiii')" id="eiiii">
+                            <span>É o primeiro a aparecer</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Chan4.jpg" alt="4">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>4. Como Chandler e Joey se conheceram?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option"  onclick="mudarCorErro('uii')" id="uii">
+                            <span>Em um jogo dos Nets</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('ui')" id="ui">
+                            <span>Joey era um dos candidatos a dividir o ape com Chandler</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('uiii')" id="uiii">
+                            <span>Através do Ross</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('uiiii')" id="uiiii">
+                            <span>Chandler era namorado de uma das irmas de Joey</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="gal" src="imagens/Chan5.jpg" alt="5">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>5. Em qual temporada Chandler pede a mao de Monica em casamento?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('iii')" id="iii">
+                            <span>5</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('ii')" id="ii">
+                            <span>6</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"onclick="mudarCorErro('iiii')" id="iiii">
+                            <span>7</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('iiiii')" id="iiiii">
+                            <span>8</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+           
+            
+            
+            
+            
+            
+            </div>
+    </main>
+    <footer>
+        
+    </footer>
+<script src="Ex2.js"></script>
+
+</body>
+</html>

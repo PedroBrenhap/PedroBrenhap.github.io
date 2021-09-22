@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joey</title>
+    <link rel="stylesheet" href="Ex2.css">
+    <link rel="stylesheet" href="Ex3.css">
+    <link rel="stylesheet" href="Ex4.css">
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img id="i" src="imagens/logo.png" alt="logo" style="position: absolute; width: 280px; margin: 22px;"></a>
+    </header>
+    <nav>
+        <div class="x" style="position: absolute; margin-left: 530px;  margin-top: 15px; font-size: 30px;">Joey</div>
+        <button class="d" style="margin-left: 795px; "><a href="Chandler.html" class="col">Chandler</a></button>
+        <button class="d" style="margin-left: 976px;"><a href="Monica.html" class="col">Monica</a></button>
+        <button class="d" style="margin-left: 1070px;"><a href="Phoebe.html" class="col">Phoebe</a></button>
+        <button class="d" style="margin-left: 1155px;"><a href="Rachel.html" class="col">Rachel</a></button>
+        <button class="d" style="margin-left: 1253px;"><a href="Ross.html" class="col">Ross</a></button>
+        <button class="q"><a href="Personagens.html" class="col">Voltar ao menu de personagens</a></button>
+    </nav>
+    <main>
+        <img src="imagens/LogoQuiz.jpg" alt="LQ" style="width: 1366px; height: 420px;">
+        <div id="rolar" style="margin-left: 0px; margin-top: -415px; position: ;">
+            
+            <img class="ga" src="imagens/Joey01.jpg" alt="01">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                         <span>1. Qual eh o nome do amigo imaginario do Joey?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" id="oii" onclick="mudarCorErro('oii')">
+                            <span>Fluffy</span>
+                            <div class="icon cross" id="wq"><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" id="oi" onclick="mudarCorAcerto('oi')">
+                            <span>Hugsy</span>
+                            <div class="icon tick"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" id="oiii" onclick="mudarCorErro('oiii')">
+                            <span>Sr. Fluckels</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" id="oiiii" onclick="mudarCorErro('oiiii')">
+                            <span>Maurice</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Joey02.png" alt="2" style="width: 500px; height: 300px; margin-left: 422px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>2. Quantas irmas tem o Joey?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('aiii')" id="aiii">
+                            <span>5</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('aii')" id="aii">
+                            <span>8</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('aiiii')" id="aiiii">
+                            <span>6</span>
+                            <div class="icon tick" ><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('ai')" id="ai">
+                            <span>7</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Joey03.jpg" alt="3" style="width: 500px; height: 400px;margin-left: 422px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>3. Joey participou da campanha de prevencao de qual doenca?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('eii')" id="eii">
+                            <span>Aids</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorErro('eiii')" id="eiii">
+                            <span>hiv</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorErro('eiiii')" id="eiiii">
+                            <span>Sifilis</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorAcerto('ei')" id="ei">
+                            <span>Todas elas</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Joey04.jpg" alt="4" style="width: 400px; height: 626px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>4. Qual a comida favorita de Joey?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option"  onclick="mudarCorErro('uii')" id="uii">
+                            <span>Torta de carne</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('ui')" id="ui">
+                            <span>Pizza</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('uiii')" id="uiii">
+                            <span>Espaguete</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('uiiii')" id="uiiii">
+                            <span>Sanduiche</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="gal" src="imagens/Joey05.jpg" alt="5" style="width: 400px; height: 400px; margin-left:  480px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>5. Qual era o nome do "irmao gemeo" do Joey?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('iii')" id="iii">
+                            <span>Matt</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('iiiii')" id="iiiii">
+                            <span>Carlos</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"onclick="mudarCorErro('iiii')" id="iiii">
+                            <span>Matthew</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('ii')" id="ii">
+                            <span>Carl</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+           
+            
+            
+            
+            
+            
+            </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="Ex2.js"></script>
+</body>
+</html>

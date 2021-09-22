@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica</title>
+    <link rel="stylesheet" href="Ex2.css">
+    <link rel="stylesheet" href="Ex3.css">
+    <link rel="stylesheet" href="Ex4.css">
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img id="i" src="imagens/logo.png" alt="logo" style="position: absolute; width: 280px; margin: 22px;"></a>
+    </header>
+    <nav>
+        <div class="x" style="position: absolute; margin-left: 530px;  margin-top: 15px; font-size: 30px;">Monica</div>
+        <button class="d" style="margin-left: 795px; "><a href="Chandler.html" class="col">Chandler</a></button>
+        <button class="d" style="margin-left: 920px;"><a href="Joey.html" class="col">Joey</a></button>
+        <button class="d" style="margin-left: 1070px;"><a href="Phoebe.html" class="col">Phoebe</a></button>
+        <button class="d" style="margin-left: 1155px;"><a href="Rachel.html" class="col">Rachel</a></button>
+        <button class="d" style="margin-left: 1253px;"><a href="Ross.html" class="col">Ross</a></button>
+        <button class="q"><a href="Personagens.html" class="col">Voltar ao menu de personagens</a></button>
+    </nav>
+    <main>
+        <img src="imagens/LogoQuiz.jpg" alt="LQ" style="width: 1366px; height: 420px;">
+        <div id="rolar" style="margin-left: 0px; margin-top: -415px; position: ;">
+            
+            <img class="ga" src="imagens/Monica01.png" alt="01">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                         <span>1. Quantos relacionamentos Monica teve no decorrer da serie?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" id="oii" onclick="mudarCorErro('oii')">
+                            <span>6</span>
+                            <div class="icon cross" id="wq"><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" id="oi" onclick="mudarCorErro('oi')">
+                            <span>8</span>
+                            <div class="icon tick"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" id="oiii" onclick="mudarCorErro('oiii')">
+                            <span>7</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" id="oiiii" onclick="mudarCorAcerto('oiiii')">
+                            <span>9</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Monica02.jpg" alt="2" style="width: 500px; height: 400px; margin-left: 422px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>2. Segundo Monica, quantas areas erogenas possui o corpo de uma mulher?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('aiii')" id="aiii">
+                            <span>6</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('aii')" id="aii">
+                            <span>7</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('aiiii')" id="aiiii">
+                            <span>8</span>
+                            <div class="icon tick" ><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('ai')" id="ai">
+                            <span>5</span>
+                            <div class="icon cross" ><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Monica03.jpg" alt="3" style="width: 500px; height: 400px;margin-left: 422px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>3. Porque Monica resolveu emagrecer?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('eii')" id="eii">
+                            <span>Estava com problemas de saude</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorAcerto('eiii')" id="eiii">
+                            <span>Queria chamar a atencao do amigo do Ross, na epoca da faculdade</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorErro('eiiii')" id="eiiii">
+                            <span>Perdeu uma aposta</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"  onclick="mudarCorErro('ei')" id="ei">
+                            <span>Nenhuma das alternativas</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="ga" src="imagens/Monica04.jpg" alt="4" style="width: 400px; height: 450px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>4. Porque Monica e Richard terminaram?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option"  onclick="mudarCorAcerto('uii')" id="uii">
+                            <span>Porque Richard não queria se casar</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('ui')" id="ui">
+                            <span>Porque seus pais nao aprovavam o namoro deles</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('uiii')" id="uiii">
+                            <span>Porque Richard traiu ela com uma paciente do consultorio dele</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('uiiii')" id="uiiii">
+                            <span>Porque Monica não gostava mais do Richard</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <img class="gal" src="imagens/Monica05.jpg" alt="5" style="width: 500px; height: 400px; margin-left:  425px;">
+            <div class="quiz_box">
+                <section>
+                    <div class="quiz">
+                        <span>5. Quais os nomes dos filhos de Monica e Chandler?</span>
+                    </div>
+                    <div class="option_list">
+                        <div class="option" onclick="mudarCorErro('iii')" id="iii">
+                            <span>Ben e Emma</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorAcerto('iiiii')" id="iiiii">
+                            <span>Jack e Erika</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option"onclick="mudarCorErro('iiii')" id="iiii">
+                            <span> Joey e Erika</span>
+                            <div class="icon cross" hidden><i class="fas fa-times"></i></div>
+                        </div>
+                        <div class="option" onclick="mudarCorErro('ii')" id="ii">
+                            <span>Jack e Emma</span>
+                            <div class="icon tick" hidden><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+           
+            
+            
+            
+            
+            
+            </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="Ex2.js"></script>
+</body>
+</html>

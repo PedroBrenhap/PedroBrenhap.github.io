@@ -1,0 +1,55 @@
+.fc{
+    width: 450px;
+    height: 353px;
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    
+}
+input{
+    width: 170px;
+    height: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+input:hover{
+    background-color: black;
+    border: 2px solid white;
+    color: rgb(134, 134, 134);
+    transition: 0.7s;
+}
+input:focus{
+    background-color: rgb(255, 255, 255);
+}
+.pgph{
+    position: absolute;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 28px;
+}
+select{
+    width: 178px;
+    height: 26px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+select:hover{
+    background-color: black;
+    border: 2px solid white;
+    color: rgb(134, 134, 134);
+    transition: 0.7s;
+}
+textarea{
+    margin-top: 70px;
+    margin-left: 1000px;
+    border-radius: 10px;
+    position: absolute;
+    color: black;
+}
+textarea:hover{
+    background-color: black;
+    border: 2px solid white;
+    color: rgb(134, 134, 134);
+    transition: 0.7s;
+}
